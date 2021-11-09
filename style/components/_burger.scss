@@ -1,0 +1,38 @@
+.burger {
+  position: relative;
+  width: 2.6rem;
+  height: 2rem;
+
+  &__line {
+    background-color: $colorWhite;
+
+    height: 0.3rem;
+    position: absolute;
+
+    &:nth-child(1) {
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    &:nth-child(2) {
+      width: 50%;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:nth-child(3) {
+      width: 25%;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &:hover,
+  &.-active {
+    &__line {
+      width: 100%;
+    }
+  }
+}

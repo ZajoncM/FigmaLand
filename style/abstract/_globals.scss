@@ -1,0 +1,15 @@
+html {
+  font-size: 50%; // 1rem = 8px
+
+  @include breakpoint(small) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include breakpoint(medium) {
+    font-size: 62.5%; // 1rem = 10px
+  }
+}
+
+img {
+  max-width: 100%;
+}
