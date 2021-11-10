@@ -33,17 +33,20 @@
 
     <!-- header -->
     <header class="header">
-      <div class="container header__container">
+      <div class="container d-flex flex-column align-items-center">
         <h1 class="h1 mb-4">The best products start with Figma</h1>
         <h4 class="h4 mb-5 -white">Most calendars are designed for teams</h4>
         <button class="button">Try For Free</button>
       </div>
     </header>
 
-    <section class="features pt-5 pb-5">
+    <section class="pt-5 pb-5">
       <div class="container">
-        <h2 class="h2 mb-4">Features</h2>
-        <h4 class="h4 mb-4">Most calendars are designed for teams</h4>
+        <div class="heading-wrapper">
+          <h2 class="h2">Features</h2>
+          <h4 class="h4 mt-4">Most calendars are designed for teams</h4>
+        </div>
+
         <div class="video">
           <img class="video__image" src="./assets/img.jpg" alt="video" />
           <svg
@@ -73,30 +76,27 @@
             </defs>
           </svg>
         </div>
-        <div class="feature-details">
-          <div class="feature-detail">
+        <div class="mt-5 row">
+          <div class="col-12 d-flex flex-column align-items-center">
             <svg
               width="46"
               height="47"
               viewBox="0 0 46 47"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              class="feature-detail__icon"
             >
               <path
                 d="M14.1042 0.743835C17.8117 0.743835 21.3673 2.21664 23.9889 4.83824C26.6105 7.45984 28.0833 11.0155 28.0833 14.723C28.0833 18.1034 26.8888 21.2043 24.8808 23.6188H45.875V46.4938H23V25.4997C20.5854 27.5076 17.4846 28.7022 14.1042 28.7022C10.3967 28.7022 6.84101 27.2294 4.2194 24.6078C1.5978 21.9862 0.125 18.4305 0.125 14.723C0.125 11.0155 1.5978 7.45984 4.2194 4.83824C6.84101 2.21664 10.3967 0.743835 14.1042 0.743835Z"
                 fill="#2091F9"
               />
             </svg>
-            <h5 class="feature-detail__title">
-              OpenType features Variable fonts
-            </h5>
+            <h3 class="h3 mt-5 mb-5 -bold">OpenType features Variable fonts</h3>
             <p class="p">
               Slate helps you see how many more days you need to work to reach
               your financial goal.
             </p>
           </div>
-          <div class="feature-detail">
+          <div class="col-12 d-flex flex-column align-items-center mt-5">
             <svg
               width="46"
               height="43"
@@ -110,13 +110,13 @@
               />
             </svg>
 
-            <h5 class="feature-detail__title">Design with real data</h5>
+            <h3 class="h3 mt-5 mb-5 -bold">Design with real data</h3>
             <p class="p">
               Slate helps you see how many more days you need to work to reach
               your financial goal.
             </p>
           </div>
-          <div class="feature-detail">
+          <div class="col-12 d-flex flex-column align-items-center mt-5">
             <svg
               width="49"
               height="47"
@@ -130,7 +130,7 @@
               />
             </svg>
 
-            <h5 class="feature-detail__title">Fastest way to take action</h5>
+            <h3 class="h3 mt-5 mb-5 -bold">Fastest way to take action</h3>
             <p class="p">
               Slate helps you see how many more days you need to work to reach
               your financial goal.
@@ -138,10 +138,10 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 heading-wrapper">
             <h2 class="h2 mb-4">Fastest way to organize</h2>
-            <h4 class="h4 mb-4">Most calendars are designed for teams.</h4>
-            <button class="button">Try For Free</button>
+            <h4 class="h4 mb-5">Most calendars are designed for teams.</h4>
+            <button class="button mt-5">Try For Free</button>
           </div>
           <div class="col-12">
             <img src="./assets/macbook.png" alt="macbook" />
@@ -150,67 +150,64 @@
       </div>
     </section>
 
-    <section class="newsletter pb-5 pt-5 container">
+    <section class="pb-5 pt-5 container">
       <div class="row">
-        <div class="col-12">
-          <h3 class="h3">At your fingertips</h3>
-          <h2 class="h2">Newsletter</h2>
-          <h4 class="h4">
-            Most calendars are designed for teams. Slate is designed for
-            freelancers
-          </h4>
+        <div class="col-12 heading-wrapper">
+          <h3 class="h3 -bold">At your fingertips</h3>
+          <h2 class="h2 mt-4">Newsletter</h2>
+          <h4 class="h4 mt-4">Most calendars are designed for teams.</h4>
         </div>
         <div class="col-12"><img src="./assets/mail.png" alt="mail" /></div>
-        <div class="col-12">
-          <h3 class="h3">Subscribe to our Newsletter</h3>
-          <p class="p">Available exclusivery on Figmaland</p>
+        <div class="col-12 mt-5">
+          <h3 class="h3 -bold">Subscribe to our Newsletter</h3>
+          <p class="p mt-4">Available exclusivery on Figmaland</p>
         </div>
-        <form action="" class="col-12 d-flex flex-column">
+        <form action="" class="col-12 mt-5 d-flex flex-column">
           <input
             class="input"
             type="email"
             name="email"
             placeholder="Your Email"
           />
-          <input type="submit" class="button -submit" value="Subscribe" />
+          <input type="submit" class="button mt-5 -submit" value="Subscribe" />
         </form>
       </div>
     </section>
 
-    <section class="partners pb-5 pt-5 container">
-      <h2 class="h2">Partners</h2>
-      <h4 class="h4">
-        Most calendars are designed for teams. Slate is designed for freelancers
-      </h4>
-      <div class="partners__list">
-        <div class="partners__item">
-          <p class="partners__name">Client Name</p>
-          <img class="partners__image" src="./assets/google.png" alt="image" />
+    <section class="d-flex flex-column align-items-center pb-5 pt-5 container">
+      <div class="heading-wrapper">
+        <h2 class="h2">Partners</h2>
+        <h4 class="h4">Most calendars are designed for teams.</h4>
+      </div>
+
+      <div class="partner__list">
+        <div class="partner">
+          <p class="p mb-3">Client Name</p>
+          <img src="./assets/google.png" alt="image" />
         </div>
-        <div class="partners__item">
-          <p class="partners__name">Client Name</p>
-          <img class="partners__image" src="./assets/amazon.png" alt="image" />
+        <div class="partner">
+          <p class="p mb-3">Client Name</p>
+          <img src="./assets/amazon.png" alt="image" />
         </div>
-        <div class="partners__item">
-          <p class="partners__name">Client Name</p>
-          <img
-            class="partners__image"
-            src="./assets/microsoft.png"
-            alt="image"
-          />
+        <div class="partner">
+          <p class="p mb-3">Client Name</p>
+          <img src="./assets/microsoft.png" alt="image" />
         </div>
       </div>
-      <button class="button">Try For Free</button>
+      <button class="button mt-5">Try For Free</button>
     </section>
     <section class="pt-5 pb-5 -bg-dark">
       <div class="container">
-        <h2 class="h2 -white">Pricing</h2>
-        <h4 class="h4 -white">Most calendars are designed for teams.</h4>
+        <div class="heading-wrapper">
+          <h2 class="h2 -white">Pricing</h2>
+          <h4 class="h4 -white">Most calendars are designed for teams.</h4>
+        </div>
+
         <div class="price-list">
           <div class="price mt-5">
             <h3 class="h3 -bold">FREE</h3>
-            <p class="p w-50">Organize across all apps by hand</p>
-            <div class="d-flex align-items-center">
+            <p class="p w-50 mt-3">Organize across all apps by hand</p>
+            <div class="d-flex align-items-center mt-5 mb-4">
               <span class="price__value">0</span>
               <span class="p text-left"><b>$</b><br />Per Month</span>
             </div>
@@ -225,8 +222,8 @@
           </div>
           <div class="price mt-5 -highlight">
             <h3 class="h3 -bold">STANDARD</h3>
-            <p class="p w-50">Organize across all apps by hand</p>
-            <div class="d-flex align-items-center">
+            <p class="p w-50 mt-3">Organize across all apps by hand</p>
+            <div class="d-flex align-items-center mt-5 mb-4">
               <span class="price__value">10</span>
               <span class="p text-left"><b>$</b><br />Per Month</span>
             </div>
@@ -241,8 +238,8 @@
           </div>
           <div class="price mt-5">
             <h3 class="h3 -bold">BUSINESS</h3>
-            <p class="p w-50">Organize across all apps by hand</p>
-            <div class="d-flex align-items-center">
+            <p class="p w-50 mt-3">Organize across all apps by hand</p>
+            <div class="d-flex align-items-center mt-5 mb-4">
               <span class="price__value">99</span>
               <span class="p text-left"><b>$</b><br />Per Month</span>
             </div>
@@ -259,8 +256,11 @@
       </div>
     </section>
     <section class="contact pt-5 pb-5 container">
-      <h2 class="h2">Contact Us</h2>
-      <h4 class="h4">Most calendars are designed for teams.</h4>
+      <div class="heading-wrapper mb-0">
+        <h2 class="h2">Contact Us</h2>
+        <h4 class="h4">Most calendars are designed for teams.</h4>
+      </div>
+
       <div class="contact__social">
         <a href="http://"
           ><svg
@@ -419,32 +419,32 @@
         <input type="submit" class="button -submit" value="Send" />
       </form>
     </section>
-    <footer class="footer pt-5 pb-5 -bg-dark -white">
+    <footer class="footer -bg-dark -white">
       <div class="container">
-        <div class="row">
+        <div class="row footer__details">
           <div class="col-12">
             <h3 class="h3 -bold">Annette Steward</h3>
-            <p class="p">Julie Henry</p>
-            <p class="p">Johnny Murphy</p>
-            <p class="p">Gregory Mccoy</p>
-            <p class="p">Marvin Mckinney</p>
+            <p class="p mt-4">Julie Henry</p>
+            <p class="p mt-4">Johnny Murphy</p>
+            <p class="p mt-4">Gregory Mccoy</p>
+            <p class="p mt-4">Marvin Mckinney</p>
           </div>
           <div class="col-12">
             <h3 class="h3 -bold">Annette Steward</h3>
-            <p class="p">Julie Henry</p>
-            <p class="p">Johnny Murphy</p>
-            <p class="p">Gregory Mccoy</p>
-            <p class="p">Marvin Mckinney</p>
+            <p class="p mt-4">Julie Henry</p>
+            <p class="p mt-4">Johnny Murphy</p>
+            <p class="p mt-4">Gregory Mccoy</p>
+            <p class="p mt-4">Marvin Mckinney</p>
           </div>
           <div class="col-12">
             <h3 class="h3 -bold">Annette Steward</h3>
-            <p class="p">Julie Henry</p>
-            <p class="p">Johnny Murphy</p>
-            <p class="p">Gregory Mccoy</p>
-            <p class="p">Marvin Mckinney</p>
+            <p class="p mt-4">Julie Henry</p>
+            <p class="p mt-4">Johnny Murphy</p>
+            <p class="p mt-4">Gregory Mccoy</p>
+            <p class="p mt-4">Marvin Mckinney</p>
           </div>
           <div class="col-12">
-            <div class="contact__list">
+            <div class="contact__list w-75 ml-auto mr-auto">
               <div class="contact__item">
                 <div class="contact__icon">
                   <svg
@@ -508,7 +508,7 @@
                 <p class="contact__description">7480 Mockingbird Hill</p>
               </div>
             </div>
-            <div class="contact__social">
+            <div class="contact__social mb-0">
               <a href="http://"
                 ><svg
                   width="34"
