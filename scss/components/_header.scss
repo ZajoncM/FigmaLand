@@ -21,4 +21,7 @@
       font-weight: bold;
     }
   }
+  @include breakpoint("x-large") {
+    min-height: 95vh;
+  }
 }
