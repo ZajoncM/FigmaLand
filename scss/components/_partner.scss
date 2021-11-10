@@ -3,7 +3,16 @@
   border: 0.1rem solid $colorLightBackground;
   text-align: center;
   width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
 
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-1rem);
+  }
   &-list {
     display: flex;
     flex-wrap: wrap;

@@ -5,9 +5,13 @@
   padding: 1.6rem 6rem;
   border-radius: 5rem;
   font-size: 2rem;
-
+  transition: 0.3s;
   &.-secondary {
     color: $colorPrimary;
     background-color: $colorWhite;
+  }
+
+  &:hover {
+    transform: translateY(-1rem);
   }
 }
