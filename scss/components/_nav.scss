@@ -30,4 +30,11 @@
   &__social {
     width: 2rem;
   }
+
+  @include breakpoint("x-large") {
+    &__links,
+    &__socials {
+      flex-basis: 50%;
+    }
+  }
 }
