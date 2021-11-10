@@ -21,11 +21,16 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    width: 75%;
+    margin: 0 auto;
   }
 
   &__icon {
     min-width: 4rem;
     display: flex;
     justify-content: center;
+  }
+  &-title {
+    margin: 10rem 0 5rem 0;
   }
 }

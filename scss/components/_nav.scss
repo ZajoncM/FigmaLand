@@ -2,7 +2,32 @@
   position: absolute;
   display: flex;
   align-items: center;
-  width: 100vw;
+  left: 0;
+  right: 0;
+  top: 1rem;
   justify-content: space-between;
   z-index: 100;
+
+  &__link {
+    color: $colorWhite;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: $colorWhite;
+      text-decoration: none;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 4rem;
+  }
+
+  &__socials {
+    gap: 3rem;
+  }
+
+  &__social {
+    width: 2rem;
+  }
 }

@@ -3,9 +3,12 @@ $breakpoints: (
     min-width: 360px,
   ),
   "medium": (
-    min-width: 992px,
+    min-width: 768px,
   ),
   "large": (
+    min-width: 992px,
+  ),
+  "x-large": (
     min-width: 1200px,
   ),
 ) !default;
