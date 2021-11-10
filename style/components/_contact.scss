@@ -1,0 +1,25 @@
+.contact {
+  &__social {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    color: $colorLightText;
+    margin: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

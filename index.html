@@ -18,12 +18,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>FigmaLand</title>
   </head>
   <body>
     <!-- navigation -->
-    <nav class="nav container">
-      <img class="nav__logo" src="assets/logo.png" alt="logo" />
+    <nav class="navigation container">
+      <img src="assets/logo.png" alt="logo" />
       <div class="burger">
         <div class="burger__line -first"></div>
         <div class="burger__line -second"></div>
@@ -40,7 +40,7 @@
       </div>
     </header>
 
-    <section class="features mt-5">
+    <section class="features pt-5 pb-5">
       <div class="container">
         <h2 class="h2 mb-4">Features</h2>
         <h4 class="h4 mb-4">Most calendars are designed for teams</h4>
@@ -150,7 +150,7 @@
       </div>
     </section>
 
-    <section class="newsletter container">
+    <section class="newsletter pb-5 pt-5 container">
       <div class="row">
         <div class="col-12">
           <h3 class="h3">At your fingertips</h3>
@@ -165,7 +165,7 @@
           <h3 class="h3">Subscribe to our Newsletter</h3>
           <p class="p">Available exclusivery on Figmaland</p>
         </div>
-        <form action="" class="col-12 form">
+        <form action="" class="col-12 d-flex flex-column">
           <input
             class="input"
             type="email"
@@ -177,7 +177,7 @@
       </div>
     </section>
 
-    <section class="partners container">
+    <section class="partners pb-5 pt-5 container">
       <h2 class="h2">Partners</h2>
       <h4 class="h4">
         Most calendars are designed for teams. Slate is designed for freelancers
@@ -202,29 +202,358 @@
       </div>
       <button class="button">Try For Free</button>
     </section>
-    <section class="pricing">
+    <section class="pt-5 pb-5 -bg-dark">
       <div class="container">
         <h2 class="h2 -white">Pricing</h2>
         <h4 class="h4 -white">Most calendars are designed for teams.</h4>
         <div class="price-list">
-          <div class="price">
-            <h3 class="h3">FREE</h3>
-            <p class="p">Organize across all apps by hand</p>
-            <div class="price__value-wrapper">
+          <div class="price mt-5">
+            <h3 class="h3 -bold">FREE</h3>
+            <p class="p w-50">Organize across all apps by hand</p>
+            <div class="d-flex align-items-center">
               <span class="price__value">0</span>
-              <p><span>$</span><br />Per Month</p>
+              <span class="p text-left"><b>$</b><br />Per Month</span>
             </div>
-            <ul>
-              <li>Pricing Feature</li>
-              <li>Pricing Feature</li>
-              <li>Pricing Feature</li>
-              <li>Pricing Feature</li>
-              <li>Pricing Feature</li>
+            <ul class="price__features">
+              <li class="price__feature">Pricing Feature</li>
+              <li class="price__feature">Pricing Feature</li>
+              <li class="price__feature">Pricing Feature</li>
+              <li class="price__feature">Pricing Feature</li>
+              <li class="price__feature">Pricing Feature</li>
             </ul>
-            <button class="button">Order Now</button>
+            <button class="button mt-5">Order Now</button>
+          </div>
+          <div class="price mt-5 -highlight">
+            <h3 class="h3 -bold">STANDARD</h3>
+            <p class="p w-50">Organize across all apps by hand</p>
+            <div class="d-flex align-items-center">
+              <span class="price__value">10</span>
+              <span class="p text-left"><b>$</b><br />Per Month</span>
+            </div>
+            <ul class="price__features">
+              <li class="price__feature">Pricing Feature</li>
+              <li class="price__feature">Pricing Feature</li>
+              <li class="price__feature">Pricing Feature</li>
+              <li class="price__feature">Pricing Feature</li>
+              <li class="price__feature">Pricing Feature</li>
+            </ul>
+            <button class="button mt-5 -secondary">Order Now</button>
+          </div>
+          <div class="price mt-5">
+            <h3 class="h3 -bold">BUSINESS</h3>
+            <p class="p w-50">Organize across all apps by hand</p>
+            <div class="d-flex align-items-center">
+              <span class="price__value">99</span>
+              <span class="p text-left"><b>$</b><br />Per Month</span>
+            </div>
+            <ul class="price__features">
+              <li class="price__feature">Pricing Feature</li>
+              <li class="price__feature">Pricing Feature</li>
+              <li class="price__feature">Pricing Feature</li>
+              <li class="price__feature">Pricing Feature</li>
+              <li class="price__feature">Pricing Feature</li>
+            </ul>
+            <button class="button mt-5">Order Now</button>
           </div>
         </div>
       </div>
     </section>
+    <section class="contact pt-5 pb-5 container">
+      <h2 class="h2">Contact Us</h2>
+      <h4 class="h4">Most calendars are designed for teams.</h4>
+      <div class="contact__social">
+        <a href="http://"
+          ><svg
+            width="34"
+            height="28"
+            viewBox="0 0 34 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M33.665 3.97191C32.4402 4.50026 31.1073 4.8805 29.7344 5.0286C31.1598 4.18179 32.2272 2.84398 32.7364 1.26616C31.3988 2.06183 29.9336 2.61977 28.4056 2.91523C27.7669 2.23249 26.9945 1.68859 26.1365 1.31742C25.2785 0.946252 24.3532 0.755764 23.4183 0.757829C19.6359 0.757829 16.5939 3.82382 16.5939 7.58626C16.5939 8.1146 16.6579 8.64295 16.762 9.15128C11.0983 8.85508 6.04707 6.14933 2.68889 2.00664C2.07699 3.05178 1.75634 4.24179 1.76028 5.45288C1.76028 7.82241 2.96507 9.91177 4.80226 11.1406C3.71957 11.0979 2.66224 10.8003 1.71626 10.272V10.3561C1.71626 13.6742 4.06178 16.424 7.18781 17.0564C6.60086 17.2089 5.99706 17.2869 5.39064 17.2886C4.94635 17.2886 4.52608 17.2445 4.1018 17.1845C4.96636 19.8902 7.484 21.8555 10.4819 21.9196C8.13642 23.7568 5.19851 24.8375 2.00845 24.8375C1.43607 24.8375 0.907731 24.8174 0.359375 24.7534C3.38534 26.6947 6.97567 27.8154 10.8422 27.8154C23.3943 27.8154 30.2628 17.4166 30.2628 8.39078C30.2628 8.09459 30.2628 7.7984 30.2428 7.50221C31.5716 6.52957 32.7364 5.32479 33.665 3.97191Z"
+              fill="#2091F9"
+            />
+          </svg>
+        </a>
+        <a href="http://">
+          <svg
+            width="34"
+            height="33"
+            viewBox="0 0 34 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M31.7321 0.275391H2.27302C1.56456 0.275391 0.992188 0.847762 0.992188 1.55622V31.0153C0.992188 31.7238 1.56456 32.2962 2.27302 32.2962H31.7321C32.4406 32.2962 33.013 31.7238 33.013 31.0153V1.55622C33.013 0.847762 32.4406 0.275391 31.7321 0.275391ZM28.0337 9.62146H25.4761C23.4708 9.62146 23.0825 10.5741 23.0825 11.975V15.061H27.8696L27.2452 19.8921H23.0825V32.2962H18.0913V19.8961H13.9166V15.061H18.0913V11.4987C18.0913 7.36399 20.6169 5.11053 24.3073 5.11053C26.0765 5.11053 27.5934 5.24261 28.0377 5.30265V9.62146H28.0337Z"
+              fill="#2091F9"
+            />
+          </svg> </a
+        ><a href="http://">
+          <svg
+            width="33"
+            height="33"
+            viewBox="0 0 33 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M31.7165 0.275391H2.25739C1.54893 0.275391 0.976562 0.847762 0.976562 1.55622V31.0153C0.976562 31.7238 1.54893 32.2962 2.25739 32.2962H31.7165C32.425 32.2962 32.9973 31.7238 32.9973 31.0153V1.55622C32.9973 0.847762 32.425 0.275391 31.7165 0.275391ZM10.4747 27.5611H5.72364V12.2792H10.4747V27.5611ZM8.10119 10.1898C7.55654 10.1898 7.02412 10.0283 6.57126 9.72573C6.11841 9.42314 5.76545 8.99305 5.55702 8.48987C5.34859 7.98668 5.29406 7.43298 5.40031 6.8988C5.50657 6.36462 5.76884 5.87394 6.15396 5.48882C6.53909 5.10369 7.02977 4.84142 7.56395 4.73516C8.09813 4.62891 8.65182 4.68344 9.15501 4.89187C9.6582 5.1003 10.0883 5.45326 10.3909 5.90612C10.6935 6.35897 10.855 6.89139 10.855 7.43604C10.851 8.95702 9.61817 10.1898 8.10119 10.1898ZM28.2623 27.5611H23.5152V20.1283C23.5152 18.3551 23.4832 16.0776 21.0456 16.0776C18.576 16.0776 18.1957 18.0069 18.1957 20.0002V27.5611H13.4527V12.2792H18.0076V14.3685H18.0717C18.7041 13.1678 20.2531 11.8989 22.5666 11.8989C27.3777 11.8989 28.2623 15.065 28.2623 19.1797V27.5611Z"
+              fill="#2091F9"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="contact__list">
+        <div class="contact__item">
+          <div class="contact__icon">
+            <svg
+              width="28"
+              height="23"
+              viewBox="0 0 28 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_67:7874)">
+                <path
+                  d="M25.8125 0.966797H1.4375C0.918945 0.966797 0.5 1.38574 0.5 1.9043V20.6543C0.5 21.1729 0.918945 21.5918 1.4375 21.5918H25.8125C26.3311 21.5918 26.75 21.1729 26.75 20.6543V1.9043C26.75 1.38574 26.3311 0.966797 25.8125 0.966797ZM24.6406 4.21289V19.4824H2.60938V4.21289L1.80078 3.58301L2.95215 2.10352L4.20605 3.0791H23.0469L24.3008 2.10352L25.4521 3.58301L24.6406 4.21289ZM23.0469 3.07617L13.625 10.4004L4.20312 3.07617L2.94922 2.10059L1.79785 3.58008L2.60645 4.20996L12.6143 11.9912C12.9021 12.2148 13.2561 12.3362 13.6206 12.3362C13.9851 12.3362 14.3391 12.2148 14.627 11.9912L24.6406 4.21289L25.4492 3.58301L24.2979 2.10352L23.0469 3.07617Z"
+                  fill="#2091F9"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_67:7874">
+                  <rect
+                    width="27"
+                    height="22"
+                    fill="white"
+                    transform="translate(0.5 0.279297)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <p class="contact__description">willie.jennings@example.com</p>
+        </div>
+        <div class="contact__item">
+          <div class="contact__icon">
+            <svg
+              width="22"
+              height="35"
+              viewBox="0 0 22 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_67:7868)">
+                <path
+                  d="M16.5417 1.2373H4.875C2.45417 1.2373 0.5 3.19147 0.5 5.6123V28.9456C0.5 31.3665 2.45417 33.3206 4.875 33.3206H16.5417C18.9625 33.3206 20.9167 31.3665 20.9167 28.9456V5.6123C20.9167 3.19147 18.9625 1.2373 16.5417 1.2373ZM13.625 30.404H7.79167V28.9456H13.625V30.404ZM18.3646 26.029H3.05208V5.6123H18.3646V26.029Z"
+                  fill="#2091F9"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_67:7868">
+                  <rect
+                    width="21"
+                    height="34"
+                    fill="white"
+                    transform="translate(0.5 0.279297)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <p class="contact__description">(843) 555-0130</p>
+        </div>
+        <div class="contact__item">
+          <div class="contact__icon">
+            <svg
+              width="27"
+              height="33"
+              viewBox="0 0 27 33"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_67:7862)">
+                <path
+                  d="M13.5013 19.946C16.9941 19.946 19.8346 17.1055 19.8346 13.6126C19.8346 10.1198 16.9941 7.2793 13.5013 7.2793C10.0085 7.2793 7.16797 10.1198 7.16797 13.6126C7.16797 17.1055 10.0085 19.946 13.5013 19.946ZM13.5013 10.446C15.2477 10.446 16.668 11.8662 16.668 13.6126C16.668 15.359 15.2477 16.7793 13.5013 16.7793C11.7549 16.7793 10.3346 15.359 10.3346 13.6126C10.3346 11.8662 11.7549 10.446 13.5013 10.446Z"
+                  fill="#2091F9"
+                />
+                <path
+                  d="M12.2485 32.3185C12.5164 32.5098 12.8375 32.6127 13.1668 32.6127C13.4961 32.6127 13.8172 32.5098 14.0851 32.3185C14.5665 31.978 25.8794 23.8096 25.8335 13.613C25.8335 6.62887 20.1509 0.946289 13.1668 0.946289C6.18272 0.946289 0.500139 6.62887 0.500139 13.605C0.454223 23.8096 11.7671 31.978 12.2485 32.3185ZM13.1668 4.11296C18.4061 4.11296 22.6668 8.37371 22.6668 13.6209C22.7001 20.6477 15.7191 26.9573 13.1668 29.0267C10.6161 26.9557 3.63356 20.6445 3.66681 13.613C3.66681 8.37371 7.92756 4.11296 13.1668 4.11296Z"
+                  fill="#2091F9"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_67:7862">
+                  <rect
+                    width="26"
+                    height="32"
+                    fill="white"
+                    transform="translate(0.5 0.779297)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <p class="contact__description">
+            6386 Spring St undefined Anchorage, Georgia 12473 United States
+          </p>
+        </div>
+      </div>
+      <form action="" class="form">
+        <h3 class="h3 align-self-center -bold">Contact Us</h3>
+        <input class="input" name="name" placeholder="Your Name" />
+        <input
+          class="input"
+          type="email"
+          name="email"
+          placeholder="Your Email"
+        />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          class="textarea"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" class="button -submit" value="Send" />
+      </form>
+    </section>
+    <footer class="footer pt-5 pb-5 -bg-dark -white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="h3 -bold">Annette Steward</h3>
+            <p class="p">Julie Henry</p>
+            <p class="p">Johnny Murphy</p>
+            <p class="p">Gregory Mccoy</p>
+            <p class="p">Marvin Mckinney</p>
+          </div>
+          <div class="col-12">
+            <h3 class="h3 -bold">Annette Steward</h3>
+            <p class="p">Julie Henry</p>
+            <p class="p">Johnny Murphy</p>
+            <p class="p">Gregory Mccoy</p>
+            <p class="p">Marvin Mckinney</p>
+          </div>
+          <div class="col-12">
+            <h3 class="h3 -bold">Annette Steward</h3>
+            <p class="p">Julie Henry</p>
+            <p class="p">Johnny Murphy</p>
+            <p class="p">Gregory Mccoy</p>
+            <p class="p">Marvin Mckinney</p>
+          </div>
+          <div class="col-12">
+            <div class="contact__list">
+              <div class="contact__item">
+                <div class="contact__icon">
+                  <svg
+                    width="22"
+                    height="35"
+                    viewBox="0 0 22 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_67:7868)">
+                      <path
+                        d="M16.5417 1.2373H4.875C2.45417 1.2373 0.5 3.19147 0.5 5.6123V28.9456C0.5 31.3665 2.45417 33.3206 4.875 33.3206H16.5417C18.9625 33.3206 20.9167 31.3665 20.9167 28.9456V5.6123C20.9167 3.19147 18.9625 1.2373 16.5417 1.2373ZM13.625 30.404H7.79167V28.9456H13.625V30.404ZM18.3646 26.029H3.05208V5.6123H18.3646V26.029Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_67:7868">
+                        <rect
+                          width="21"
+                          height="34"
+                          fill="white"
+                          transform="translate(0.5 0.279297)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <p class="contact__description">(843) 555-0130</p>
+              </div>
+              <div class="contact__item">
+                <div class="contact__icon">
+                  <svg
+                    width="27"
+                    height="33"
+                    viewBox="0 0 27 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_67:7862)">
+                      <path
+                        d="M13.5013 19.946C16.9941 19.946 19.8346 17.1055 19.8346 13.6126C19.8346 10.1198 16.9941 7.2793 13.5013 7.2793C10.0085 7.2793 7.16797 10.1198 7.16797 13.6126C7.16797 17.1055 10.0085 19.946 13.5013 19.946ZM13.5013 10.446C15.2477 10.446 16.668 11.8662 16.668 13.6126C16.668 15.359 15.2477 16.7793 13.5013 16.7793C11.7549 16.7793 10.3346 15.359 10.3346 13.6126C10.3346 11.8662 11.7549 10.446 13.5013 10.446Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M12.2485 32.3185C12.5164 32.5098 12.8375 32.6127 13.1668 32.6127C13.4961 32.6127 13.8172 32.5098 14.0851 32.3185C14.5665 31.978 25.8794 23.8096 25.8335 13.613C25.8335 6.62887 20.1509 0.946289 13.1668 0.946289C6.18272 0.946289 0.500139 6.62887 0.500139 13.605C0.454223 23.8096 11.7671 31.978 12.2485 32.3185ZM13.1668 4.11296C18.4061 4.11296 22.6668 8.37371 22.6668 13.6209C22.7001 20.6477 15.7191 26.9573 13.1668 29.0267C10.6161 26.9557 3.63356 20.6445 3.66681 13.613C3.66681 8.37371 7.92756 4.11296 13.1668 4.11296Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_67:7862">
+                        <rect
+                          width="26"
+                          height="32"
+                          fill="white"
+                          transform="translate(0.5 0.779297)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <p class="contact__description">7480 Mockingbird Hill</p>
+              </div>
+            </div>
+            <div class="contact__social">
+              <a href="http://"
+                ><svg
+                  width="34"
+                  height="28"
+                  viewBox="0 0 34 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M33.665 3.97191C32.4402 4.50026 31.1073 4.8805 29.7344 5.0286C31.1598 4.18179 32.2272 2.84398 32.7364 1.26616C31.3988 2.06183 29.9336 2.61977 28.4056 2.91523C27.7669 2.23249 26.9945 1.68859 26.1365 1.31742C25.2785 0.946252 24.3532 0.755764 23.4183 0.757829C19.6359 0.757829 16.5939 3.82382 16.5939 7.58626C16.5939 8.1146 16.6579 8.64295 16.762 9.15128C11.0983 8.85508 6.04707 6.14933 2.68889 2.00664C2.07699 3.05178 1.75634 4.24179 1.76028 5.45288C1.76028 7.82241 2.96507 9.91177 4.80226 11.1406C3.71957 11.0979 2.66224 10.8003 1.71626 10.272V10.3561C1.71626 13.6742 4.06178 16.424 7.18781 17.0564C6.60086 17.2089 5.99706 17.2869 5.39064 17.2886C4.94635 17.2886 4.52608 17.2445 4.1018 17.1845C4.96636 19.8902 7.484 21.8555 10.4819 21.9196C8.13642 23.7568 5.19851 24.8375 2.00845 24.8375C1.43607 24.8375 0.907731 24.8174 0.359375 24.7534C3.38534 26.6947 6.97567 27.8154 10.8422 27.8154C23.3943 27.8154 30.2628 17.4166 30.2628 8.39078C30.2628 8.09459 30.2628 7.7984 30.2428 7.50221C31.5716 6.52957 32.7364 5.32479 33.665 3.97191Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a href="http://">
+                <svg
+                  width="34"
+                  height="33"
+                  viewBox="0 0 34 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.7321 0.275391H2.27302C1.56456 0.275391 0.992188 0.847762 0.992188 1.55622V31.0153C0.992188 31.7238 1.56456 32.2962 2.27302 32.2962H31.7321C32.4406 32.2962 33.013 31.7238 33.013 31.0153V1.55622C33.013 0.847762 32.4406 0.275391 31.7321 0.275391ZM28.0337 9.62146H25.4761C23.4708 9.62146 23.0825 10.5741 23.0825 11.975V15.061H27.8696L27.2452 19.8921H23.0825V32.2962H18.0913V19.8961H13.9166V15.061H18.0913V11.4987C18.0913 7.36399 20.6169 5.11053 24.3073 5.11053C26.0765 5.11053 27.5934 5.24261 28.0377 5.30265V9.62146H28.0337Z"
+                    fill="white"
+                  />
+                </svg> </a
+              ><a href="http://">
+                <svg
+                  width="33"
+                  height="33"
+                  viewBox="0 0 33 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.7165 0.275391H2.25739C1.54893 0.275391 0.976562 0.847762 0.976562 1.55622V31.0153C0.976562 31.7238 1.54893 32.2962 2.25739 32.2962H31.7165C32.425 32.2962 32.9973 31.7238 32.9973 31.0153V1.55622C32.9973 0.847762 32.425 0.275391 31.7165 0.275391ZM10.4747 27.5611H5.72364V12.2792H10.4747V27.5611ZM8.10119 10.1898C7.55654 10.1898 7.02412 10.0283 6.57126 9.72573C6.11841 9.42314 5.76545 8.99305 5.55702 8.48987C5.34859 7.98668 5.29406 7.43298 5.40031 6.8988C5.50657 6.36462 5.76884 5.87394 6.15396 5.48882C6.53909 5.10369 7.02977 4.84142 7.56395 4.73516C8.09813 4.62891 8.65182 4.68344 9.15501 4.89187C9.6582 5.1003 10.0883 5.45326 10.3909 5.90612C10.6935 6.35897 10.855 6.89139 10.855 7.43604C10.851 8.95702 9.61817 10.1898 8.10119 10.1898ZM28.2623 27.5611H23.5152V20.1283C23.5152 18.3551 23.4832 16.0776 21.0456 16.0776C18.576 16.0776 18.1957 18.0069 18.1957 20.0002V27.5611H13.4527V12.2792H18.0076V14.3685H18.0717C18.7041 13.1678 20.2531 11.8989 22.5666 11.8989C27.3777 11.8989 28.2623 15.065 28.2623 19.1797V27.5611Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

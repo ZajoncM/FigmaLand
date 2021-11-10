@@ -1,3 +1,11 @@
 .-white {
   color: $colorWhite;
 }
+
+.-bold {
+  font-weight: bold;
+}
+
+.-bg-dark {
+  background-color: $colorBackground;
+}
