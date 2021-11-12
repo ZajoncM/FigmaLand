@@ -1,0 +1,38 @@
+@use "../abstract/fonts";
+@use "../abstract/mixins" as m;
+
+html {
+  font-size: 50%; // 1rem = 8px
+
+  @include m.breakpoint(small) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include m.breakpoint(medium) {
+    font-size: 62.5%; // 1rem = 10px
+  }
+}
+
+body {
+  color: fonts.$colorLightText;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.-white {
+  color: fonts.$colorWhite;
+}
+
+.-bold {
+  font-weight: bold;
+}
+
+.-bg-dark {
+  background-color: fonts.$colorBackground;
+}

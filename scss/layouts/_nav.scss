@@ -1,0 +1,52 @@
+@use "../abstract/fonts";
+@use "../abstract/mixins" as m;
+
+.navigation {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 1rem;
+  justify-content: space-between;
+  z-index: 100;
+
+  &__link {
+    color: fonts.$colorWhite;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+    &:hover {
+      color: fonts.$colorPrimary;
+      text-decoration: none;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 4rem;
+  }
+
+  &__socials {
+    gap: 3rem;
+  }
+
+  &__social {
+    width: 2rem;
+
+    & path {
+      transition: fill 0.2s;
+    }
+    &:hover {
+      & path {
+        fill: fonts.$colorPrimary;
+      }
+    }
+  }
+
+  @include m.breakpoint("x-large") {
+    &__links,
+    &__socials {
+      flex-basis: 50%;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use "../abstract/fonts";
+
+.partner {
+  padding: 2rem;
+  border: 0.1rem solid fonts.$colorLightBackground;
+  text-align: center;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-1rem);
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__title {
+    margin: 10rem 0 8rem 0;
+  }
+
+  &-wrapper {
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+  }
+}

@@ -1,0 +1,12 @@
+@use "../abstract/mixins" as m;
+
+.img {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+
+  @include m.breakpoint("x-large") {
+    max-width: 100%;
+  }
+}

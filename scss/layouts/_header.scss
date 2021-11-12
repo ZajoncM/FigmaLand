@@ -1,0 +1,19 @@
+@use "../abstract/fonts";
+@use "../abstract/mixins" as m;
+
+.header {
+  min-height: 95vh;
+  padding-top: 15rem;
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: fonts.$colorWhite;
+  position: relative;
+
+  @include m.breakpoint("medium") {
+    padding-top: 20rem;
+  }
+  @include m.breakpoint("x-large") {
+    min-height: 95vh;
+  }
+}

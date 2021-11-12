@@ -1,0 +1,11 @@
+@use "../abstract/fonts";
+
+.input {
+  background-color: fonts.$colorLightBackground;
+  padding: 1.9rem 2rem;
+  width: 100%;
+  border: 0.1rem solid fonts.$colorLight;
+  box-sizing: border-box;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+}

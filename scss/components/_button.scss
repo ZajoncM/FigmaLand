@@ -1,0 +1,19 @@
+@use "../abstract/fonts";
+
+.button {
+  background-color: fonts.$colorPrimary;
+  border: none;
+  color: fonts.$colorWhite;
+  padding: 1.6rem 6rem;
+  border-radius: 5rem;
+  font-size: 2rem;
+  transition: transform 0.3s;
+  &.-secondary {
+    color: fonts.$colorPrimary;
+    background-color: fonts.$colorWhite;
+  }
+
+  &:hover {
+    transform: translateY(-1rem);
+  }
+}
