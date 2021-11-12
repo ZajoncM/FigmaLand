@@ -7,7 +7,7 @@
 
   &__line {
     background-color: fonts.$colorWhite;
-
+    transition: width 0.3s;
     height: 0.3rem;
     position: absolute;
 
@@ -31,9 +31,9 @@
     }
   }
 
-  &:hover,
-  &.-active {
-    &__line {
+  &:hover {
+    cursor: pointer;
+    .burger__line {
       width: 100%;
     }
   }

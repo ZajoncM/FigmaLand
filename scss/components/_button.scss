@@ -7,7 +7,7 @@
   padding: 1.6rem 6rem;
   border-radius: 5rem;
   font-size: 2rem;
-  transition: 0.3s;
+  transition: transform 0.3s;
   &.-secondary {
     color: fonts.$colorPrimary;
     background-color: fonts.$colorWhite;

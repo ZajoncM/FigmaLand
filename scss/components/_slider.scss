@@ -1,0 +1,28 @@
+@use "../abstract/animations";
+@use "../abstract/mixins" as m;
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 0 3rem 0;
+  &__item {
+    font-size: 4.8rem;
+    font-weight: normal;
+    text-align: center;
+    flex: 0 0 100%;
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  @include m.breakpoint("medium") {
+    &__item {
+      font-weight: bold;
+    }
+  }
+
+  @include m.breakpoint("x-large") {
+    max-width: 50%;
+  }
+}

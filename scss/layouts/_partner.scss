@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  transition: 0.3s;
+  transition: transform 0.3s;
 
   &:hover {
     cursor: pointer;
