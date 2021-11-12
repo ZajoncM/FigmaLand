@@ -1,3 +1,6 @@
+@use "../abstract/fonts";
+@use "../abstract/mixins" as m;
+
 .video {
   position: relative;
   max-width: 50rem;
@@ -13,7 +16,7 @@
   &__button {
     width: 10rem;
     height: 10rem;
-    background-color: $colorPrimary;
+    background-color: fonts.$colorPrimary;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,7 +41,7 @@
     }
   }
 
-  @include breakpoint("x-large") {
+  @include m.breakpoint("x-large") {
     max-width: 100%;
   }
 }

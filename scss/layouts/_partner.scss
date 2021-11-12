@@ -1,6 +1,8 @@
+@use "../abstract/fonts";
+
 .partner {
   padding: 2rem;
-  border: 0.1rem solid $colorLightBackground;
+  border: 0.1rem solid fonts.$colorLightBackground;
   text-align: center;
   width: 30rem;
   display: flex;

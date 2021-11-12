@@ -1,10 +1,12 @@
+@use "../abstract/fonts";
+
 .burger {
   position: relative;
   width: 2.6rem;
   height: 2rem;
 
   &__line {
-    background-color: $colorWhite;
+    background-color: fonts.$colorWhite;
 
     height: 0.3rem;
     position: absolute;

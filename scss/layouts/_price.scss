@@ -1,10 +1,13 @@
+@use "../abstract/fonts";
+@use "../abstract/mixins" as m;
+
 .price {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 4rem 0;
-  background-color: $colorWhite;
-  border: 0.1rem solid $colorLight;
+  background-color: fonts.$colorWhite;
+  border: 0.1rem solid fonts.$colorLight;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
   border-radius: 1rem;
   max-width: 45rem;
@@ -27,10 +30,10 @@
   }
 
   &.-highlight {
-    background-color: $colorPrimary;
-    color: $colorWhite;
+    background-color: fonts.$colorPrimary;
+    color: fonts.$colorWhite;
   }
-  @include breakpoint("x-large") {
+  @include m.breakpoint("x-large") {
     &.-highlight {
       padding: 6rem 0;
     }

@@ -1,14 +1,16 @@
+@use "../abstract/fonts";
+
 .button {
-  background-color: $colorPrimary;
+  background-color: fonts.$colorPrimary;
   border: none;
-  color: $colorWhite;
+  color: fonts.$colorWhite;
   padding: 1.6rem 6rem;
   border-radius: 5rem;
   font-size: 2rem;
   transition: 0.3s;
   &.-secondary {
-    color: $colorPrimary;
-    background-color: $colorWhite;
+    color: fonts.$colorPrimary;
+    background-color: fonts.$colorWhite;
   }
 
   &:hover {

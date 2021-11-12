@@ -1,10 +1,13 @@
+@use "../abstract/fonts";
+@use "../abstract/mixins" as m;
+
 .header {
   min-height: 95vh;
   padding-top: 15rem;
   background-image: url("../assets/background.jpg");
   background-size: cover;
   background-position: center;
-  color: $colorWhite;
+  color: fonts.$colorWhite;
   position: relative;
 
   &__title {
@@ -14,14 +17,14 @@
     margin: 0 0 3rem 0;
   }
 
-  @include breakpoint("medium") {
+  @include m.breakpoint("medium") {
     padding-top: 20rem;
 
     &__title {
       font-weight: bold;
     }
   }
-  @include breakpoint("x-large") {
+  @include m.breakpoint("x-large") {
     min-height: 95vh;
   }
 }

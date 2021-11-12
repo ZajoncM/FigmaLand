@@ -1,3 +1,6 @@
+@use "../abstract/fonts";
+@use "../abstract/mixins" as m;
+
 .navigation {
   position: absolute;
   display: flex;
@@ -9,11 +12,11 @@
   z-index: 100;
 
   &__link {
-    color: $colorWhite;
+    color: fonts.$colorWhite;
     font-size: 1.5rem;
     transition: 0.3s;
     &:hover {
-      color: $colorPrimary;
+      color: fonts.$colorPrimary;
       text-decoration: none;
     }
   }
@@ -35,12 +38,12 @@
     }
     &:hover {
       & path {
-        fill: $colorPrimary;
+        fill: fonts.$colorPrimary;
       }
     }
   }
 
-  @include breakpoint("x-large") {
+  @include m.breakpoint("x-large") {
     &__links,
     &__socials {
       flex-basis: 50%;

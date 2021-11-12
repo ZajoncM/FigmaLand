@@ -1,7 +1,9 @@
+@use "../abstract/fonts";
+
 .textarea {
   padding: 2.3rem 2rem;
-  background: $colorLightBackground;
-  border: 0.1rem solid $colorLight;
+  background: fonts.$colorLightBackground;
+  border: 0.1rem solid fonts.$colorLight;
   box-sizing: border-box;
   width: 100%;
   font-size: 1.5rem;
