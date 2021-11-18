@@ -159,6 +159,17 @@
   }
 }
 
+@-webkit-keyframes slide {
+  30% {
+    transform: translateX(-100%);
+  }
+  70% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
 @keyframes slide {
   30% {
     transform: translateX(-100%);
@@ -168,6 +179,14 @@
   }
   100% {
     transform: translateX(-200%);
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 @keyframes fadeIn {
@@ -492,6 +511,8 @@ img {
 
 * {
   font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .-white {
