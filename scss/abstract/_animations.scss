@@ -11,3 +11,12 @@
     transform: translateX(-200%);
   }
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

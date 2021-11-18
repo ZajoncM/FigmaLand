@@ -1,8 +1,8 @@
-@use "./contact";
-@use "./features";
-@use "./footer";
-@use "./header";
-@use "./nav";
-@use "./newsletter";
-@use "./partner";
-@use "./price";
+@forward "./contact";
+@forward "./features";
+@forward "./footer";
+@forward "./header";
+@forward "./nav";
+@forward "./newsletter";
+@forward "./partner";
+@forward "./price";
