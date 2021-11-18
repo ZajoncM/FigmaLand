@@ -5,6 +5,10 @@
   overflow: hidden;
   width: 100%;
   margin: 0 0 3rem 0;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
   &__item {
     font-size: 4.8rem;
     font-weight: normal;
@@ -12,7 +16,7 @@
     flex: 0 0 100%;
     animation-name: slide;
     animation-duration: 4s;
-    animation-delay: 1s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
   }
 
