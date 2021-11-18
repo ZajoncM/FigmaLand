@@ -458,6 +458,9 @@
   margin-left: auto;
   flex-grow: 1;
 }
+.nav-panel__close:hover {
+  cursor: pointer;
+}
 .nav-panel__link {
   color: #252b42;
   font-size: 3rem;
