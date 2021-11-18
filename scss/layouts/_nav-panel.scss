@@ -1,0 +1,58 @@
+@use "../abstract/fonts";
+
+.nav-panel {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  transition: transform 0.5s;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 100;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &.active {
+    transform: translateX(-100%);
+  }
+
+  &__close {
+    width: 3rem;
+    margin-left: auto;
+    flex-grow: 1;
+  }
+
+  &__link {
+    color: fonts.$colorText;
+    font-size: 3rem;
+    transition: color 0.3s;
+    &:hover {
+      color: fonts.$colorPrimary;
+      text-decoration: none;
+    }
+  }
+
+  &__links {
+    gap: 2rem;
+  }
+
+  &__socials {
+    gap: 3rem;
+    flex-grow: 1;
+  }
+
+  &__social {
+    width: 2rem;
+
+    & path {
+      transition: fill 0.2s;
+    }
+    &:hover {
+      & path {
+        fill: fonts.$colorPrimary;
+      }
+    }
+  }
+}

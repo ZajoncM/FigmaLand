@@ -15,6 +15,10 @@ html {
 
 body {
   color: fonts.$colorLightText;
+
+  &.-no-scroll {
+    overflow: hidden;
+  }
 }
 
 img {
